@@ -1,0 +1,17 @@
+# Core API + DB connection (parity with the Go backend)
+fastapi>=0.110
+uvicorn[standard]>=0.29
+PyMySQL>=1.1
+PyJWT>=2.8
+python-dotenv>=1.0
+
+# Server-side report rendering (the point of the Python prototype):
+# data shaping, charts, and HTML templating + the AI narrative client.
+pandas>=2.2
+matplotlib>=3.8
+jinja2>=3.1
+httpx>=0.27
+
+# Optional: HTML -> PDF server-side. Needs system GTK/Pango/Cairo libs, so it is
+# left out of the default install on Windows. The prototype returns HTML.
+# weasyprint>=61
